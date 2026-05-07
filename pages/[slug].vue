@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <h1 class="headline center">{{ blog.title }}</h1>
-    <p class="center"> {{ blog.description }}</p>
+    <p class="descrip"> {{ blog.description }}</p>
     <div class="sections center">
       <div class="group center">
-        <p style="white-space: pre-line"> {{ formattedBody }}</p>
+        <p class="paragraph" style="white-space: pre-line"> {{ formattedBody }}</p>
       </div>
 
       <NuxtLink to="/" class="back"> back </NuxtLink>
@@ -49,3 +49,28 @@ import { singleBlogQuery } from '../graphql/queries';
   }
   }
 </script>
+
+<style scoped>
+.descrip{
+  font-size: x-large;
+}
+
+p{
+  padding-left: 10px;
+}
+
+.paragraph{
+   background-color: black;
+   padding-top: 30px;
+   width: 60%;
+   border-radius: 5px;
+}
+
+.back{
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+</style>

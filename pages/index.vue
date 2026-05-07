@@ -57,6 +57,8 @@ import { allBlogsQuery } from '../graphql/queries';
 
     h3{
         padding-top: 35px;
+        text-decoration: underline;
+        color: white;
     }
 
     .section{
