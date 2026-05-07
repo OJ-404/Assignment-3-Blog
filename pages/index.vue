@@ -37,3 +37,47 @@ import { allBlogsQuery } from '../graphql/queries';
     }
   }
 </script>
+
+<style>
+    body{
+        background-color: #000033;
+        color:aliceblue;
+        
+    }
+
+    h1{
+        padding-left: 20px;
+    }
+
+    p{
+        padding-bottom: 35px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    h3{
+        padding-top: 35px;
+    }
+
+    .section{
+        width: 70%;
+        background-color: black;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 10px 10px grey;
+    }
+
+    .sections{
+        padding-left: 23%;
+    }
+
+    .subtitle{
+        display: flex;
+        padding-left: 80% ;
+       
+    }
+
+    .entry{
+        font-size: 120%;
+    }
+</style>
