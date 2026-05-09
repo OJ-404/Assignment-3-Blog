@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - strapiapi
+
+  strapiapi:
+    build: ./strapiApi
+    ports:
+      - "1337:1337"
+    volumes:
+      - ./strapiApi:/app
+      - /app/node_modules
+      - ./strapiApi/.tmp:/app/.tmp
+      - ./strapiApi/.cache:/app/.cache
