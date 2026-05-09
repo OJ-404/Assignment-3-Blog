@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 #Environment variables
 .env
-.env.*
 =======
 # Nuxt dev/build outputs
 .output
